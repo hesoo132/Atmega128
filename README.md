@@ -51,16 +51,3 @@ It integrates **12 V → 5 V/3.3 V** power, **USB‑UART**, **ISP programm
 | **Buzzer** | Wrong PIN & vibration alarm |
 | **SW‑420** | Tamper/shock detection |
 | **HC‑06** | Remote monitor & control (UART over BT) |
-
----
-
-## 🚀 Quick Start
-
-### 1) Power & Connect
-1. Supply **12 V** to the barrel jack.
-2. Connect **USB** (FT232RL) for serial monitor (**115200‑8‑N‑1** recommended).
-
-### 2) Program (ISP)
-```bash
-# Example with USBasp (edit your COM/USB and MCU as needed)
-avrdude -c usbasp -p m128 -U flash:w:firmware/main.hex
