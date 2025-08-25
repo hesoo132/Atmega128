@@ -77,12 +77,3 @@ The system supports **PIN verification, password change, vibration-based tamper 
 5. **Bluetooth**
    - Receive `1` → Door opens
    - Receive `0` → Door closes
-
----
-
-## ✅ Build & Flash
-- **Compiler**: AVR-GCC (or CodeVisionAVR in your case, since `<mega128.h>` & `<lcd.h>`)
-- **Programmer**: USBasp / Atmel-ICE
-- **Flash command (AVRDUDE example):**
-```bash
-avrdude -c usbasp -p m128 -U flash:w:main.hex
