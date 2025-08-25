@@ -77,3 +77,24 @@ The system supports **PIN verification, password change, vibration-based tamper 
 5. **Bluetooth**
    - Receive `1` → Door opens
    - Receive `0` → Door closes
+
+---
+
+## 📱 Mobile App (MIT App Inventor)
+
+A companion **Android App** was created using **MIT App Inventor**  
+to control the ATmega128A Smart Locker via Bluetooth.
+
+| Main Screen | Sign Up Screen | Control Screen |
+|-------------|--------------|----------------|
+| ![Main](../docs/images/APP(1).png) | ![Sign Up](../docs/images/APP(2).png) | ![Control](../docs/images/APP(3).png) |
+
+- **Main Screen**
+  - Bluetooth pairing, Open/Close control
+  - Door status feedback  
+
+- **Login Screen**
+  - User authentication (ID + Password)
+
+- **Sign Up Screen**
+  - Register new users (ID, Password, Name)
