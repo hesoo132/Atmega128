@@ -1,2 +1,66 @@
-# Atmega128
-ATmega128A 기반 보안 시스템 개발 보드로, 키패드 비밀번호 입력, LCD 상태 표시, 블루투스 통신, 충격/진동 감지, 서보 모터 제어, 부저 알람 기능을 통합하여 교육 및 스마트 도어락 프로토타이핑에 활용할 수 있는 플랫폼입니다.
+# ATmega128A Security System Board
+
+> Keypad + LCD + Bluetooth(HC‑06) + Shock Sensor(SW‑420) + Servo Lock + Buzzer
+> Education & Smart Access Control Prototyping Platform
+
+---
+
+## 🔎 Overview
+The **ATmega128A Security System Board** is a compact AVR platform for **learning, prototyping, and access‑control demos**.
+It integrates **12 V → 5 V/3.3 V** power, **USB‑UART**, **ISP programming**, **keypad+LCD UI**, **HC‑06 Bluetooth**, **SW‑420 vibration detection**, **servo lock**, and **buzzer alerts**.
+
+---
+
+## 📸 PCB Overview
+| Top View | Bottom View |
+|----------|-------------|
+| ![Top](docs/images/Atmega128-F.png) | ![Bottom](docs/images/Atmega128-B.png) |
+
+> Schematics (PNG): ![Schematic](docs/images/Atmega.png)
+
+---
+
+## 📑 Design Resources
+- **MCU**: ATmega128A‑AU (8‑bit AVR)
+- **EDA**: KiCad 9.0.x
+- **Board**: 2‑layer
+
+---
+
+## ⚙️ Key Hardware Notes
+- **Power**: 12 V barrel jack → **TPS562201‑5.0 / TPS562201‑3.3** rails
+- **Clock**: 16 MHz crystal
+- **Programming**: **ISP header** (AVRDUDE/USBasp/Atmel‑ICE)
+- **USB‑UART**: FT232RL (debug console / host comms)
+- **UI/Peripherals**:
+  - **Keypad (J5)**: enter/change password
+  - **LCD (J4)**: show result/tries/lockout timer
+  - **Servo**: unlock on success; stay locked on failure
+  - **Buzzer**: success/fail tone + vibration alarm
+  - **SW‑420 (J1)**: shock/vibration tamper detection
+  - **HC‑06 (J2)**: Bluetooth data exchange
+
+---
+
+## 🔐 Security‑Oriented Features
+| Module | Role |
+|---|---|
+| **Keypad (J5)** | Password entry / change |
+| **LCD (J4)** | Status, error, lockout seconds |
+| **Servo** | Door actuation (open on correct PIN) |
+| **Buzzer** | Wrong PIN & vibration alarm |
+| **SW‑420** | Tamper/shock detection |
+| **HC‑06** | Remote monitor & control (UART over BT) |
+
+---
+
+## 🚀 Quick Start
+
+### 1) Power & Connect
+1. Supply **12 V** to the barrel jack.
+2. Connect **USB** (FT232RL) for serial monitor (**115200‑8‑N‑1** recommended).
+
+### 2) Program (ISP)
+```bash
+# Example with USBasp (edit your COM/USB and MCU as needed)
+avrdude -c usbasp -p m128 -U flash:w:firmware/main.hex
