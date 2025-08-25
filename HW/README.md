@@ -9,7 +9,7 @@ It integrates stable power delivery, multiple communication interfaces, keypad &
 ## 📸 PCB Overview
 | Top View | Bottom View |
 |----------|-------------|
-| ![Top](docs/images/Atmega128-F) | ![Bottom](docs/images/Atmega128-B) |
+| ![Top](docs/images/Atmega128-F.png) | ![Bottom](docs/images/Atmega128-B.png) |
 
 ---
 
@@ -31,7 +31,7 @@ It integrates stable power delivery, multiple communication interfaces, keypad &
 ---
 
 ## 🧩 Schematic Highlights
-![MCU](docs/images/Atmega.jpg)
+![MCU](docs/images/Atmega.png)
 ### 1) MCU — ATmega128A-AU  
 - **Role**: Central controller for all peripherals  
 - **Features**: GPIO Ports A–G, external 16 MHz crystal, reset circuit  
