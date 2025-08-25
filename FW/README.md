@@ -16,7 +16,7 @@ The system supports **PIN verification, password change, vibration-based tamper 
 
 - **Password Authentication**
   - 4-digit PIN entry via **Keypad (J5)**
-  - Password change supported (`\*` → old password → new password)
+  - Password change supported (`*` → old password → new password)
   - LCD shows password entry & system status
 
 - **Door Control**
