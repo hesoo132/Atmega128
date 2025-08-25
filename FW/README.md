@@ -87,7 +87,7 @@ to control the ATmega128A Smart Locker via Bluetooth.
 
 | Main Screen | Sign Up Screen | Control Screen |
 |-------------|--------------|----------------|
-| ![Main](../docs/images/APP(1).png) | ![Sign Up](../docs/images/APP(2).png) | ![Control](../docs/images/APP(3).png) |
+| ![Main](docs/images/APP(1).png) | ![Sign Up](docs/images/APP(2).png) | ![Control](docs/images/APP(3).png) |
 
 - **Main Screen**
   - Bluetooth pairing, Open/Close control
