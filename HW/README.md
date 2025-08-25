@@ -9,7 +9,7 @@ It integrates stable power delivery, multiple communication interfaces, keypad &
 ## 📸 PCB Overview
 | Top View | Bottom View |
 |----------|-------------|
-| ![Top](docs/images/Atmega128-f.png) | ![Bottom](docs/images/Atmega128-B.png) |
+| ![Top](docs/images/Atmega128-F.png) | ![Bottom](docs/images/Atmega128-B.png) |
 
 ---
 
