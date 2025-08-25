@@ -71,7 +71,3 @@ It integrates stable power delivery, multiple communication interfaces, keypad &
 - [x] Keypad & LCD integrated  
 - [x] Bluetooth bring-up (HC-06)  
 - [x] Security application firmware in progress  
-
----
-
-## 📂 Folder Layout
