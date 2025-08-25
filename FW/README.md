@@ -8,7 +8,7 @@ The system supports **PIN verification, password change, vibration-based tamper 
 ---
 
 ## 📊 System Block Diagram
-![System Diagram](/docs/images/Diagram.png)
+![System Diagram](docs/images/Diagram.png)
 
 ---
 
